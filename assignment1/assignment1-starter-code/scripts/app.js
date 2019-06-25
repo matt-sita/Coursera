@@ -28,7 +28,7 @@
 		};
 		//Private functions
 		function changeColor(color) {
-			$scope.customStyle.border = { "color": color, "border-style": "solid", "border-width": "1px" };
+			$scope.customStyle.border = { "border-color": color, "border-style": "solid", "border-width": "1px" };
 			$scope.customStyle.color = { "color": color };
 		}
 		function EmptyOrWhiteSpaceItems(array) {
