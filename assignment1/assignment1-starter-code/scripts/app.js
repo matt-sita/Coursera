@@ -3,7 +3,7 @@
 
 	angular.module('FooBar', []).controller('BarFoo', BarFoo);
 
-	BarFoo.$inject = ['$scope'];
+	FooBar.$inject = ['$scope'];
 	function BarFoo($scope) {
 		$scope.name = "FooBar";
 
