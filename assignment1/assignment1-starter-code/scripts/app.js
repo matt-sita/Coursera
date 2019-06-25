@@ -9,13 +9,13 @@
 		$scope.input = "";
 
 		$scope.checkResult = function () {
-			if (input.split(',').length == 0) {
-				result = "Please enter data first";
+			if ($scope.input.split(',').length == 0) {
+				$scope.result = "Please enter data first";
 			}
-			else if (input.split(',').length <= 3) {
-				result = "Enjoy!";
+			else if ($scope.input.split(',').length <= 3) {
+				$scope.result = "Enjoy!";
 			} else {
-				result = "Too much!";
+				$scope.result = "Too much!";
 			}
 		};
 	};
