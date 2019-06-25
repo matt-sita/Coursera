@@ -22,7 +22,7 @@
 				$scope.customStyle.style = { "color": "red", "border-style": "solid", "border-width": "1px" };
 				$scope.result = "Please enter data first";
 			}
-			else if ($scope.input.split(',').length <= 3) {
+			else if (amount <= 3) {
 				$scope.result = "Enjoy!";
 			} else {
 				$scope.result = "Too much!";
