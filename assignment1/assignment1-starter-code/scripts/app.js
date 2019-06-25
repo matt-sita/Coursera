@@ -5,10 +5,18 @@
 
 	BarFoo.$inject = ['$scope'];
 	function BarFoo($scope) {
-		$scope.name = "FooBar";
+		$scope.result = "";
+		$scope.input = "";
 
-		$scope.sayMessage = function () {
-			return "BarFoo";
+		$scope.checkResult = function () {
+			if (input.split(',').length == 0) {
+				result = "Please enter data first";
+			}
+			else if (input.split(',').length <= 3) {
+				result = "Enjoy!";
+			} else {
+				result = "Too much!";
+			}
 		};
 	};
 
