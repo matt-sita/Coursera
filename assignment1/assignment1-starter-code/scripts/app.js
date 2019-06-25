@@ -9,7 +9,7 @@
 		$scope.input = "";
 
 		$scope.checkResult = function () {
-			if ($scope.input.split(',').length == 0) {
+			if ($scope.input === "" || $scope.input.split(',').length == 0) {
 				$scope.result = "Please enter data first";
 			}
 			else if ($scope.input.split(',').length <= 3) {
